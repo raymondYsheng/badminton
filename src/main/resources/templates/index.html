@@ -1,0 +1,24 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/base}" lang="en">
+
+<head>
+    <title>JCC Backend</title>
+</head>
+
+<body>
+<th:block layout:fragment="body" th:remove="tag">
+    <!-- Start of body content specific to page -->
+    <h2>WELCOME TO THE JCC BACKEND!</h2>
+    <div id="image_topper" style="justify-content: center; text-align: center;">
+        <img src="https://cdn.britannica.com/29/180929-004-AC1DAB58.jpg" style="height: 600px">
+    </div>
+    <br>
+    <div>We wanted to use this image to make our backend distinct, so that you would know it's the JCC's! Each of our members has adopted one of the 13 colonies so that everyone feels important and included.</div>
+    <!-- End of body content specific to page -->
+</th:block>
+</body>
+
+</html>
